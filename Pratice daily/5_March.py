@@ -6,6 +6,7 @@
 #       for j in range(1,i):
 #             print(" ",end="")
 #       for k in range(0,1):
+
 #             print("*",end="")
 #       print()
 #Approach-2

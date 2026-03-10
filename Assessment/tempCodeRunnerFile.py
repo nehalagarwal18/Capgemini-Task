@@ -1,34 +1,12 @@
-# Prog.10
-# Product Stock Shortage Report
-# A product is low in stock if quantity < 10
+class Student:
+    s_name="ABC"
+    def __init__(self,roll, sec):
+        self.roll=roll
+        self.sec=sec
 
-class Solution:
-    def low_stock_products(self, products):
-        low_stock = []
-
-        for product, quantity in products.items():
-            if quantity < 10:
-                low_stock.append(product)
-
-        return low_stock
-
-
-# -------- Main Program --------
-
-# Example inventory dictionary
-products = {
-    "Laptop": 5,
-    "Mouse": 50,
-    "Keyboard": 8,
-    "Monitor": 15,
-    "PenDrive": 3
-}
-
-# Create object
-obj = Solution()
-
-# Call function
-result = obj.low_stock_products(products)
-
-# Print result
-print("Products low in stock:", result)
+s1=Student(21,'A')
+print(s1.s_name)
+Student.s_name='JECRC'
+print(s1.s_name)
+s2=Student(22,'B')
+print(s2.s_name)
